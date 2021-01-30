@@ -1,4 +1,4 @@
-package com.example.rakutentv;
+package com.example.rakutentv.ui.activities;
 
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
@@ -8,6 +8,8 @@ import android.view.WindowManager;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.rakutentv.R;
 
 public class SplashActivity extends AppCompatActivity {
 
@@ -23,7 +25,7 @@ public class SplashActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent = new Intent(SplashActivity.this, MainActivity.class);
+                Intent intent = new Intent(SplashActivity.this, LoginActivity.class);
                 startActivity(intent);
                 finish();
             }

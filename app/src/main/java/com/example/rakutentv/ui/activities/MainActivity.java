@@ -1,4 +1,4 @@
-package com.example.rakutentv;
+package com.example.rakutentv.ui.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -7,11 +7,13 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.os.Bundle;
 import android.widget.LinearLayout;
 
-import butterknife.BindView;
+import com.example.rakutentv.R;
+
+import butterknife.InjectView;
 
 public class MainActivity extends AppCompatActivity {
 
-    @BindView(R.id.rvMovies)
+    @InjectView(R.id.rvMovies)
     RecyclerView rvMovies;
 
     @Override
