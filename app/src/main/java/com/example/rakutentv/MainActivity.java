@@ -7,9 +7,11 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.os.Bundle;
 import android.widget.LinearLayout;
 
+import butterknife.BindView;
+
 public class MainActivity extends AppCompatActivity {
 
-    @Bind(R.id.rvMovies)
+    @BindView(R.id.rvMovies)
     RecyclerView rvMovies;
 
     @Override
